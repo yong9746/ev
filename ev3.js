@@ -92,7 +92,7 @@ app.get('/', async (req, res) => {
 
         page.on('request', request => {
             const url = request.url();
-            if (url.includes('elements-downloads.envatousercontent.com')) {
+            if (url.includes('envatousercontent.com')) {
                 // Log the URL
                 console.log('Intercepted request URL:', url);
                 res.send(url);
