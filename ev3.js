@@ -16,11 +16,11 @@ app.get('/', async (req, res) => {
 
     (async () => {
         const browser = await puppeteer.connect({
-            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QdVkZESFcWkI9Ece3b30af31e097c169ad01247a01&--proxy-server=http://23.247.105.131:5195`,
+            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QdjoGHyy7LIFeU1506974ca713c27924bf49403e18&--proxy-server=http://23.247.105.131:5195`,
         });
 
         const page = await browser.newPage();
-
+    
         await page.authenticate({
             username: 'msnmmayl',
             password: '626he4yucyln',
@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
         // Set cookies
         await page.setCookie({
             name: '_elements_session_4',
-            value: 'Skw0Y1FyTkJudWhDYXRJeFlTdEcwZU9INm5OWDBIeUYyVFREZDc3UU5wbUFkaEJ1SVg4K3M0VndOZzFQMitTSXN3WlR6TXlNUU9JRUJtSWFET3JoaXZsc0ZidEozbDY1c1lMVnpuR0xoa1lZZTN6b09TSnVVRzhrWVVvc2EvQkNMbUtraTJmRmlKVHhpcXlMMVQwRlZkampWUDZmWnlLWmhXYzdaakR5SVJRUkJ5bkw0N3NWbDVqVE5uWjF1UmZwL1g4ZnArVGJyV3VmWlUvNHJjYk1LUGR0SC91bmV3VWwybWVzU0hhTzA0UjlxMlNyd2drV09uVDByS2FZZjEvVWlVemUzTGFPU2d4ZXRoSE0xaFA2QnphVGFXWHJZWUxzU3NHbXoyMjA0Tk5MTUNqa09JdUV0NDl5dXhUOGJTbE5zWVZMeTZEbkdYbW1vMGJjRDYwYm9CLy9ZYlhTcExtMnVZVUZpY2YzSVJhZ2d5Rm9LRkU0dFZqYk5BbWdPeWRTZHM4cWFjWVFucnA3SUEwRmxqV3F3UT09LS1LRWw2RGMyYU04T0tFakFUWWVxZm5RPT0%3D--dc4f7eb75c773ab4a309c68650b607cd5443cc4b',
+            value: 'Sm14TkFFVG01VWE0aWhvZXlaTUwzMElra2RWQVhYcy8ralJXNndRRURCOVZpdXcwYW9EejN3QUptZTBMVEttaXFuQ2tlZzBuWlIwajYyWGx3RGRpbFNQOUFJNW54Qm0yaXo0R1JWTkZtRnBVbUJQK0hpd2xsZ3ZsNlZUcGtCeFh4RkgzT1llRi9DUGRiT3BRSjFPbG1nM2g0S1d4ekJJaGh4KzVsVGdwRmZ1TW4wVFZDUlVzNlMvSWJaekU0Y1ZWN1c4aHE2RzAycDdLaFdkckorV3JlSVNhMXpwYkpsTzJrWFlVRDdmKzE1ajZtbmVZT09jbUJndzZzb2NUOGc1b1VvZEhDaUxsWFhRQTZCbkc5QS9HNGdzM0ovK2xhaUx2K3cyYUZiYTNzYzV1NlJsV09CNCtzM1F1R21Lb0NJMlVLRDVoNnUyNVhJbEFsK3Yxa2xnRjNlaGY0T3JMV3UyN2pXcXNRVmFDNVRwRjVQWlkzUG5neGVrMXdhbHN4NHV3YkoyRXQzWVFmNEI1eXpodHhjQ1lFdz09LS02c0NubEpaWTY5TVlPZnJzSW01UVdnPT0%3D--0fba5e8499ebc0402e8434784ae7c2a3aa7fc96b',
             domain: '.elements.envato.com', // Adjust the domain to match the target site
         });
 
