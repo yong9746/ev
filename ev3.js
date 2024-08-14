@@ -29,12 +29,12 @@ app.get('/', async (req, res) => {
         // Set cookies
         await page.setCookie({
             name: '_elements_session_4',
-            value: '=OXgzcTRBSjNzdzlhVXhLaUZtbW1iNmZiWVdYMzlROWgvL3M0MFQ0WFhzclgrYVZSNDZQWDJKQmMyY0tYT0t3QitFQ3hqdHlPeG5FVkRCS2ErZkhsdU1UcW1xQ3B0YktwM3RrM0JNZks3ZU0zOGs5MTd0YTd1dTMrcXZmL3kzc0J5WnQwaFVGUWVlUXpHS1ZScXhuSU1GUUl4VG5LbERpcVQ2L1VRbjRPSis5VXFRbmxic0pTSzJQMGkxOStsL2ovSUpIZHliUklmdTNHUi9qNDRZdEEzR1ZTWitSOGx1eUg4Qjg0L0ZrdDloeWhUdDNvYVhkSndzQ2x2NXJpU056TWdVbWZKbFRGSDE4OEF6bXBCbWticWtiT3NSdm9GTlZWSUJhdTVnQ0twY2ZDR1FSS2ppVGl4NTU4aUgzdUJ1aE12ZnNSSndFUEE1ODk0bU1YL1ZmQkxkaC9qWkRwMCtieTBVWXgwaWZiS1hjdkZTbUNHU1d1cVp1dDR4dzROZ1gzV2pyT0phREtUM3NKeU01VlM1bkVxQT09LS1tbHp1MTQvM1pXNUxTMi9yZ3VJTlVRPT0%3D--35c0682a342d0131ba8af66301e7e83eb79c195c',
+            value: 'OXgzcTRBSjNzdzlhVXhLaUZtbW1iNmZiWVdYMzlROWgvL3M0MFQ0WFhzclgrYVZSNDZQWDJKQmMyY0tYT0t3QitFQ3hqdHlPeG5FVkRCS2ErZkhsdU1UcW1xQ3B0YktwM3RrM0JNZks3ZU0zOGs5MTd0YTd1dTMrcXZmL3kzc0J5WnQwaFVGUWVlUXpHS1ZScXhuSU1GUUl4VG5LbERpcVQ2L1VRbjRPSis5VXFRbmxic0pTSzJQMGkxOStsL2ovSUpIZHliUklmdTNHUi9qNDRZdEEzR1ZTWitSOGx1eUg4Qjg0L0ZrdDloeWhUdDNvYVhkSndzQ2x2NXJpU056TWdVbWZKbFRGSDE4OEF6bXBCbWticWtiT3NSdm9GTlZWSUJhdTVnQ0twY2ZDR1FSS2ppVGl4NTU4aUgzdUJ1aE12ZnNSSndFUEE1ODk0bU1YL1ZmQkxkaC9qWkRwMCtieTBVWXgwaWZiS1hjdkZTbUNHU1d1cVp1dDR4dzROZ1gzV2pyT0phREtUM3NKeU01VlM1bkVxQT09LS1tbHp1MTQvM1pXNUxTMi9yZ3VJTlVRPT0%3D--35c0682a342d0131ba8af66301e7e83eb79c195c',
             domain: '.elements.envato.com', // Adjust the domain to match the target site
         });
 
         await page.goto(targetUrl, { waitUntil: 'networkidle2' });
-
+            console.log('link Text:', targetUrl);
         await page.waitForFunction(() =>
             Array.from(document.querySelectorAll('button, a'))
                 .some(el => el.textContent.trim() === 'Accept all')
@@ -48,7 +48,7 @@ app.get('/', async (req, res) => {
                 button.click();
             }
         });
-
+ 
         // Wait for the button with text 'Let's create!' to be available
         await page.waitForFunction(() =>
             Array.from(document.querySelectorAll('button'))
