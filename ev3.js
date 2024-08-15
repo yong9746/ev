@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
 
     (async () => {
         const browser = await puppeteer.connect({
-            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QeuTheaLmuxKC691f15a9fb0e96e8dcb895e075ee8&--proxy-server=http://171.22.250.57:6176`,
+            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QfJVsQjE9VeQNc57879a02921a8ebba0f954a13a61&--proxy-server=http://171.22.250.57:6176`,
         });
 
         const page = await browser.newPage();
@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
         // Set cookies
         await page.setCookie({
             name: '_elements_session_4',
-            value: 'OXgzcTRBSjNzdzlhVXhLaUZtbW1iNmZiWVdYMzlROWgvL3M0MFQ0WFhzclgrYVZSNDZQWDJKQmMyY0tYT0t3QitFQ3hqdHlPeG5FVkRCS2ErZkhsdU1UcW1xQ3B0YktwM3RrM0JNZks3ZU0zOGs5MTd0YTd1dTMrcXZmL3kzc0J5WnQwaFVGUWVlUXpHS1ZScXhuSU1GUUl4VG5LbERpcVQ2L1VRbjRPSis5VXFRbmxic0pTSzJQMGkxOStsL2ovSUpIZHliUklmdTNHUi9qNDRZdEEzR1ZTWitSOGx1eUg4Qjg0L0ZrdDloeWhUdDNvYVhkSndzQ2x2NXJpU056TWdVbWZKbFRGSDE4OEF6bXBCbWticWtiT3NSdm9GTlZWSUJhdTVnQ0twY2ZDR1FSS2ppVGl4NTU4aUgzdUJ1aE12ZnNSSndFUEE1ODk0bU1YL1ZmQkxkaC9qWkRwMCtieTBVWXgwaWZiS1hjdkZTbUNHU1d1cVp1dDR4dzROZ1gzV2pyT0phREtUM3NKeU01VlM1bkVxQT09LS1tbHp1MTQvM1pXNUxTMi9yZ3VJTlVRPT0%3D--35c0682a342d0131ba8af66301e7e83eb79c195c',
+            value: 'aGdoZWJodjV4ZjUyMG1vZGN1VVJSSFFTMitUNTBNZk1renV1UXRoakY1cWU2cFpVKzhna05ZUEFzQjVENzdnL0IzQjIvMko0c0l4VXFJM0p5eCsxbUxqRTdOWG9zUktybkRYSCtoSDF5bjloMk5GOE45QWtYSkVDamh4RmxHUmtaNWJKbUM0SmpFY1FjTjl5dDZpNW1CREI1TU5NUHlrUlZ4cXZ2L05WTm5ORE9hMnBXaisxTUd3engvTW9OdXZzRHJZRktUd2w5cWJydnhTdTZ2VGM4UitrTHk5VVdHNGJabk5keFdQUTBldDMzMVYwV0JDQjB4Z241MGpIL2U1UjJYZWVZdjZtcUxaRXlPR0JneW44Q2hxdlltTEU5RDh4SWVXaWIzdVBCbkNYYXFOcHVDU2VuZG1DMitBamJhWFVHOURWUk5yUkhnSm82WEg1ZkRSRG9qYk1GaVZtZEZCSjlVdHlBdEtoRTFsRlkwVjE3NmZ3V0tRTFZEV3IzaFVBNzN1V3RwZHhDbHhJMm44QkUrc2lydz09LS02VFN5UUMwSGlvNEZoc3dlUHVTR3NRPT0%3D--d2f680d9c8b1087947fef0421c44e16fccde1ac5',
             domain: '.elements.envato.com', // Adjust the domain to match the target site
         });
 
