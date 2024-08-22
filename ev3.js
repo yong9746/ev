@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
 
     (async () => {
         const browser = await puppeteer.connect({
-            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QhXWJJt8ip8CWFb4a9fecb0d7b35c30cf696a69917&--proxy-server=http://184.174.27.220:6443`,
+            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QhsFlaLJwuUcI7f460ce10f14c247a859ca65a8481&--proxy-server=http://184.174.27.220:6443`,
         });
 
         const page = await browser.newPage();
@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
         // Set cookies
         await page.setCookie({
             name: '_elements_session_4',
-            value: 'Sm14TkFFVG01VWE0aWhvZXlaTUwzMElra2RWQVhYcy8ralJXNndRRURCOVZpdXcwYW9EejN3QUptZTBMVEttaXFuQ2tlZzBuWlIwajYyWGx3RGRpbFNQOUFJNW54Qm0yaXo0R1JWTkZtRnBVbUJQK0hpd2xsZ3ZsNlZUcGtCeFh4RkgzT1llRi9DUGRiT3BRSjFPbG1nM2g0S1d4ekJJaGh4KzVsVGdwRmZ1TW4wVFZDUlVzNlMvSWJaekU0Y1ZWN1c4aHE2RzAycDdLaFdkckorV3JlSVNhMXpwYkpsTzJrWFlVRDdmKzE1ajZtbmVZT09jbUJndzZzb2NUOGc1b1VvZEhDaUxsWFhRQTZCbkc5QS9HNGdzM0ovK2xhaUx2K3cyYUZiYTNzYzV1NlJsV09CNCtzM1F1R21Lb0NJMlVLRDVoNnUyNVhJbEFsK3Yxa2xnRjNlaGY0T3JMV3UyN2pXcXNRVmFDNVRwRjVQWlkzUG5neGVrMXdhbHN4NHV3YkoyRXQzWVFmNEI1eXpodHhjQ1lFdz09LS02c0NubEpaWTY5TVlPZnJzSW01UVdnPT0%3D--0fba5e8499ebc0402e8434784ae7c2a3aa7fc96b',
+            value: 'VkQxdUtYUExGUForNE5vU3VpVmNnSVJxZE9USWFubFc4L0h0VHMyV0UwRVhITmxrRmRwc3ZPWmtlZ0l0Y0xSWUJxMG1JajdGb2lZQzJQVGVCdVdHZ3RCTWZNVTZnV1JrQUoxMWpnUHhDREFjNUpvanpwQTRqb1BqaVErVFgzRkZ5dlE3Q1h1cFd1ZmxXcGlWL010NzlkbkFnN2hyMnoyWmZhbHhSZjE1ZnVBNXo2N0Zoek9GNzRMOUM0c0IycjhEZVBtVzNsR2tFbnJLQzNrU2tpb1h3UXR1L0Z1WG5BUG1LZzI1ajJyNXpLeE4wS1k2NmoyYXpYMVBDYXJiay9HaitPUmFmZ2xHV0duUHhGQTM2N1MyU1BId3F3ZFpmdTBqd1ovbkNIQ2luOTJaQ055SjU4WFpzMGVteWN1Z1NOaCtYellsOVVYeVQ3V0llUEFxYnh0RzBacXR5M0lmVzVDbGVVZE5vb0VLRUFWWVp3SEtZOEYvamxDdWRzWEg1YlJrRERQODE2bzVHTlRiZzRDMGQrOGJlUT09LS1rUk9CTUVMWlgzUVNqakV6ZTRYUEV3PT0%3D--cff6bccad3d8d5bf1c39621fe263193370bc7931',
             domain: '.elements.envato.com', // Adjust the domain to match the target site
         });
 
