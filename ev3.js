@@ -3,7 +3,7 @@ const app = express();
 const port = 8000;
 const puppeteer = require('puppeteer-core');
 
-const proxy = 'http://119.42.38.164:6346';
+const proxy = 'http://103.101.90.138:6403';
 const proxyUsername = 'msnmmayl';
 const proxyPassword = '626he4yucyln';
 
@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
 
     (async () => {
         const browser = await puppeteer.connect({
-            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QimUWNmBKurv6cd112cdcf3223c6c8053a183532ea&--proxy-server=http://119.42.38.164:6346`,
+            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=Qj9jsvsl5Xho4W4c62b21eb9bde974a3af05454f33&--proxy-server=http://103.101.90.138:6403`,
         });
 
         const page = await browser.newPage();
