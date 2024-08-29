@@ -33,36 +33,36 @@ app.get('/', async (req, res) => {
             domain: '.elements.envato.com', // Adjust the domain to match the target site
         });
 
-        await page.goto(targetUrl, { waitUntil: 'networkidle2' });
-            console.log('link Text:', targetUrl);
-        await page.waitForFunction(() =>
-            Array.from(document.querySelectorAll('button, a'))
-                .some(el => el.textContent.trim() === 'Accept all')
-        );
+        // await page.goto(targetUrl, { waitUntil: 'networkidle2' });
+        //     console.log('link Text:', targetUrl);
+        // await page.waitForFunction(() =>
+        //     Array.from(document.querySelectorAll('button, a'))
+        //         .some(el => el.textContent.trim() === 'Accept all')
+        // );
 
-        // Click the button with text 'Accept all'
-        await page.evaluate(() => {
-            const button = Array.from(document.querySelectorAll('button, a'))
-                .find(el => el.textContent.trim() === 'Accept all');
-            if (button) {
-                button.click();
-            }
-        });
-         console.log('link Text1:', targetUrl);
-        // Wait for the button with text 'Let's create!' to be available
-        await page.waitForFunction(() =>
-            Array.from(document.querySelectorAll('button'))
-                .some(el => el.textContent.trim() === "Let's create!")
-        );
+        // // Click the button with text 'Accept all'
+        // await page.evaluate(() => {
+        //     const button = Array.from(document.querySelectorAll('button, a'))
+        //         .find(el => el.textContent.trim() === 'Accept all');
+        //     if (button) {
+        //         button.click();
+        //     }
+        // });
+        //  console.log('link Text1:', targetUrl);
+        // // Wait for the button with text 'Let's create!' to be available
+        // await page.waitForFunction(() =>
+        //     Array.from(document.querySelectorAll('button'))
+        //         .some(el => el.textContent.trim() === "Let's create!")
+        // );
 
-        // Click the button with text 'Let's create!'
-        await page.evaluate(() => {
-            const button = Array.from(document.querySelectorAll('button'))
-                .find(el => el.textContent.trim() === "Let's create!");
-            if (button) {
-                button.click();
-            }
-        });
+        // // Click the button with text 'Let's create!'
+        // await page.evaluate(() => {
+        //     const button = Array.from(document.querySelectorAll('button'))
+        //         .find(el => el.textContent.trim() === "Let's create!");
+        //     if (button) {
+        //         button.click();
+        //     }
+        // });
  console.log('link Text2:', targetUrl);
         // Wait for the element containing the text to load
         await page.waitForSelector('.woNBXVXX');
