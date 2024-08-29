@@ -48,21 +48,21 @@ app.get('/', async (req, res) => {
         //         button.click();
         //     }
         // });
-        //  console.log('link Text1:', targetUrl);
-        // // Wait for the button with text 'Let's create!' to be available
-        // await page.waitForFunction(() =>
-        //     Array.from(document.querySelectorAll('button'))
-        //         .some(el => el.textContent.trim() === "Let's create!")
-        // );
+         console.log('link Text1:', targetUrl);
+        // Wait for the button with text 'Let's create!' to be available
+        await page.waitForFunction(() =>
+            Array.from(document.querySelectorAll('button'))
+                .some(el => el.textContent.trim() === "Let's create!")
+        );
 
-        // // Click the button with text 'Let's create!'
-        // await page.evaluate(() => {
-        //     const button = Array.from(document.querySelectorAll('button'))
-        //         .find(el => el.textContent.trim() === "Let's create!");
-        //     if (button) {
-        //         button.click();
-        //     }
-        // });
+        // Click the button with text 'Let's create!'
+        await page.evaluate(() => {
+            const button = Array.from(document.querySelectorAll('button'))
+                .find(el => el.textContent.trim() === "Let's create!");
+            if (button) {
+                button.click();
+            }
+        });
  console.log('link Text2:', targetUrl);
         // Wait for the element containing the text to load
         await page.waitForSelector('.woNBXVXX');
