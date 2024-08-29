@@ -48,7 +48,7 @@ app.get('/', async (req, res) => {
                 button.click();
             }
         });
- 
+         console.log('link Text1:', targetUrl);
         // Wait for the button with text 'Let's create!' to be available
         await page.waitForFunction(() =>
             Array.from(document.querySelectorAll('button'))
@@ -63,7 +63,7 @@ app.get('/', async (req, res) => {
                 button.click();
             }
         });
-
+ console.log('link Text2:', targetUrl);
         // Wait for the element containing the text to load
         await page.waitForSelector('.woNBXVXX');
 
