@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
 
     (async () => {
         const browser = await puppeteer.connect({
-            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=QlmskmL25jqJVX34f9045ca671778e4cfa2ff0bb59&--proxy-server=http://45.67.3.29:6192`,
+            browserWSEndpoint: `wss://production-sfo.browserless.io?&token=Qm76Q7jDwyFvgl81ad27c2ad3e69f7504bb2e01411&--proxy-server=http://45.67.3.29:6192`,
         });
 
         const page = await browser.newPage();
@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
         // Set cookies
         await page.setCookie({
             name: '_elements_session_4',
-            value: 'VkQxdUtYUExGUForNE5vU3VpVmNnSVJxZE9USWFubFc4L0h0VHMyV0UwRVhITmxrRmRwc3ZPWmtlZ0l0Y0xSWUJxMG1JajdGb2lZQzJQVGVCdVdHZ3RCTWZNVTZnV1JrQUoxMWpnUHhDREFjNUpvanpwQTRqb1BqaVErVFgzRkZ5dlE3Q1h1cFd1ZmxXcGlWL010NzlkbkFnN2hyMnoyWmZhbHhSZjE1ZnVBNXo2N0Zoek9GNzRMOUM0c0IycjhEZVBtVzNsR2tFbnJLQzNrU2tpb1h3UXR1L0Z1WG5BUG1LZzI1ajJyNXpLeE4wS1k2NmoyYXpYMVBDYXJiay9HaitPUmFmZ2xHV0duUHhGQTM2N1MyU1BId3F3ZFpmdTBqd1ovbkNIQ2luOTJaQ055SjU4WFpzMGVteWN1Z1NOaCtYellsOVVYeVQ3V0llUEFxYnh0RzBacXR5M0lmVzVDbGVVZE5vb0VLRUFWWVp3SEtZOEYvamxDdWRzWEg1YlJrRERQODE2bzVHTlRiZzRDMGQrOGJlUT09LS1rUk9CTUVMWlgzUVNqakV6ZTRYUEV3PT0%3D--cff6bccad3d8d5bf1c39621fe263193370bc7931',
+            value: 'K0MzSXdQcTB2dnd3VVJKQUtQV3d4eWZFaWlWaDYyc1d1cVhPeFJDbUZpV2ttajJ3TE5kWkpQRmhqTGg5ZzJnUFRVY2srMW1ibnJIOUtnNmNmKzBkTFM4cGlCbVZLV2tnTFgyanhJNDV4UGNoeHozaVltVFRFVlFVbmxlVXgwQ2dIWUhIUHVmN0ZDZlRWZHM1SWthSUE1SER0YlhaNHdpMHFQNk5oRzRBRUg1RXYvUVlnUnlPdVYxc1ZUUnVwckk0YThKeVZpOHhuamdGMVZURitmeXFETUZCeXA0NEI3eVkxOFYwOUhTVHBVYmdkeVhkMVRFeHpIbkZBcnFyd01hQWl6NGNsSkhRZjFTKytvUDJPRUdjYUlWc2s1T1FZQ1I0RkFNczR5NUphTjVSaWExalZPTVVESENyc0RLc3M3RndsUTdnNFpIcUxwVkcxd2NZQ1NVbW56bVVubDZGMDBzdC9WcFM3TU82SnZsMjBkYUl4VlZxYWNQMHBXT2xicGNETTgrZkJWSFBucmVkQTRZaXpFVU04QT09LS0vT1pFejVXMC83OVcya29IeTlialFnPT0%3D--f4d85e1b7e6b9e9a12bf1c1a64f9e1a4afa3b5b0',
             domain: '.elements.envato.com', // Adjust the domain to match the target site
         });
 
